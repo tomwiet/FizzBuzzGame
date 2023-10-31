@@ -57,7 +57,7 @@ namespace FizzBuzzGame
             
             while (true) 
             {
-                Console.WriteLine("Gramy dalej? [T/n]");
+                Console.WriteLine("Gramy dalej? [t/n]");
                 
                 var key = Console.ReadLine();
 
