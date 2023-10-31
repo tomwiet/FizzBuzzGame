@@ -1,9 +1,4 @@
 ﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Net;
-using System.Text;
-using System.Threading.Tasks;
 
 namespace FizzBuzzGame
 {/// <summary>
@@ -20,7 +15,7 @@ namespace FizzBuzzGame
         /// "FizzBuzz" string for number divisible by 3 and 5;
         /// That number as string if none of above;
         /// </returns>
-        public string SayFizzBuzz(int number) 
+        public string SayFizzBuzz(int number)
         {
             if (number % 3 == 0 && number % 5 == 0)
                 return "FizzBuzz";
@@ -30,7 +25,7 @@ namespace FizzBuzzGame
 
             if (number % 5 == 0)
                 return "Buzz";
-           
+
             return number.ToString();
         }
         /// <summary>
@@ -39,7 +34,7 @@ namespace FizzBuzzGame
         /// <returns>Number get from user console</returns>
         public int GetNumber()
         {
-            while (true) 
+            while (true)
             {
                 Console.WriteLine("Podaj liczbę: ");
 
@@ -51,18 +46,18 @@ namespace FizzBuzzGame
                 }
                 return number;
             }
-            
+
         }
         /// <summary>
         /// Ask user if stop game or play again
         /// </summary>
         public void IfStopGame()
         {
-            
-            while (true) 
+
+            while (true)
             {
                 Console.WriteLine("Gramy dalej? [t/n]");
-                
+
                 var key = Console.ReadLine();
 
                 if (key.ToUpper() == "N")
@@ -73,7 +68,7 @@ namespace FizzBuzzGame
                 else
                     Console.WriteLine("Wpisz t lub n");
             }
-            
+
 
         }
 

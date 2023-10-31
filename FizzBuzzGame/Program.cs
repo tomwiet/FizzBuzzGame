@@ -1,8 +1,4 @@
 ﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 
 namespace FizzBuzzGame
 {
@@ -11,14 +7,14 @@ namespace FizzBuzzGame
         static void Main(string[] args)
         {
             var fizBuzz = new FizzBuzz();
-            
-            while (true) 
-            {   
+
+            while (true)
+            {
 
                 var number = fizBuzz.GetNumber();
-                
+
                 Console.WriteLine(fizBuzz.SayFizzBuzz(number));
-               
+
                 fizBuzz.IfStopGame();
 
             }
