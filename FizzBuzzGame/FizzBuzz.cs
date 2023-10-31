@@ -51,7 +51,9 @@ namespace FizzBuzzGame
             }
             
         }
-
+        /// <summary>
+        /// Ask user if stiop game or play again
+        /// </summary>
         public void IfStopGame()
         {
             
