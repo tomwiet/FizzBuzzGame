@@ -35,7 +35,7 @@ namespace FizzBuzzGame
         /// Get input from console, try parse to int
         /// </summary>
         /// <returns>Number get from user console</returns>
-        public int getNumber()
+        public int GetNumber()
         {
             while (true) 
             {
@@ -48,5 +48,25 @@ namespace FizzBuzzGame
             }
             
         }
+
+        public void IfStopGame()
+        {
+            
+            while (true) 
+            {
+                Console.WriteLine("Gramy dalej? [T/n]");
+                
+                var key = Console.ReadLine();
+                
+                if (key.ToUpper() == "N")
+                    Environment.Exit(0);
+                
+                if(key.ToUpper()=="T")
+                    break;
+            }
+            
+
+        }
+
     }
 }

@@ -11,16 +11,18 @@ namespace FizzBuzzGame
         static void Main(string[] args)
         {
             var fizBuzz = new FizzBuzz();
-            Console.WriteLine("Podaj liczbę: ");
-            
             
             while (true) 
-            {
-                var number = fizBuzz.getNumber();
+            {   
+                Console.WriteLine("Podaj liczbę: ");
+
+                var number = fizBuzz.GetNumber();
+                
                 Console.WriteLine(fizBuzz.SayFizzBuzz(number));
-                break;
+               
+                fizBuzz.IfStopGame();
+
             }
-            Console.ReadLine();
         }
     }
 }
