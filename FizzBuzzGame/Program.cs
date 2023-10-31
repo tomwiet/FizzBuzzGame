@@ -14,7 +14,6 @@ namespace FizzBuzzGame
             
             while (true) 
             {   
-                Console.WriteLine("Podaj liczbę: ");
 
                 var number = fizBuzz.GetNumber();
                 

@@ -39,9 +39,12 @@ namespace FizzBuzzGame
         {
             while (true) 
             {
+                Console.WriteLine("Podaj liczbę: ");
+
                 if (!int.TryParse(Console.ReadLine(), out int number))
                 {
                     Console.WriteLine("Miałes podac liczbe!");
+                    this.IfStopGame();
                     continue;
                 }
                 return number;
@@ -57,12 +60,14 @@ namespace FizzBuzzGame
                 Console.WriteLine("Gramy dalej? [T/n]");
                 
                 var key = Console.ReadLine();
-                
+
                 if (key.ToUpper() == "N")
                     Environment.Exit(0);
-                
-                if(key.ToUpper()=="T")
+
+                else if (key.ToUpper() == "T")
                     break;
+                else
+                    Console.WriteLine("Wpisz t lub n");
             }
             
 
