@@ -6,14 +6,12 @@ using System.Threading.Tasks;
 
 namespace FizzBuzzGame
 {
-    internal class Program
+    internal class FizzBuzz
     {
-        static void Main(string[] args)
+        public string SayFizzBuzz() 
         {
-            while (true) 
-            {
-                
-            }
+
+            return "0";
         }
     }
 }
