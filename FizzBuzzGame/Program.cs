@@ -10,10 +10,17 @@ namespace FizzBuzzGame
     {
         static void Main(string[] args)
         {
+            var fizBuzz = new FizzBuzz();
+            Console.WriteLine("Podaj liczbę: ");
+            
+            
             while (true) 
             {
-                
+                var number = fizBuzz.getNumber();
+                Console.WriteLine(fizBuzz.SayFizzBuzz(number));
+                break;
             }
+            Console.ReadLine();
         }
     }
 }
