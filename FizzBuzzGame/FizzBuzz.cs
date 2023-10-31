@@ -6,7 +6,9 @@ using System.Text;
 using System.Threading.Tasks;
 
 namespace FizzBuzzGame
-{
+{/// <summary>
+/// FizzBuzz game class
+/// </summary>
     internal class FizzBuzz
     {   /// <summary>
         /// Say Fizz, Buzz or FizzBuzz
