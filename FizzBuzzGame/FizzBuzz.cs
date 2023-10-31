@@ -8,11 +8,28 @@ using System.Threading.Tasks;
 namespace FizzBuzzGame
 {
     internal class FizzBuzz
-    {
+    {   /// <summary>
+        /// Say Fizz, Buzz or FizzBuzz
+        /// </summary>
+        /// <param name="number" >number to check</param>
+        /// <returns>
+        /// "Fizz string for numbers divisible by 3;
+        /// "Buzz" string for number didisible by 5;
+        /// "FizzBuzz" string for number divisible by 3 and 5;
+        /// That number as string if none of above;
+        /// </returns>
         public string SayFizzBuzz(int number) 
         {
+            if (number % 3 == 0 && number % 5 == 0)
+                return "FizzBuzz";
 
-            return number.ToString();
+            else if (number % 3 == 0)
+                return "Fizz";
+
+            else if (number % 5 == 0)
+                return "Buzz";
+            else
+                return number.ToString();
         }
         /// <summary>
         /// Get input from console, try parse to int
